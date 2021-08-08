@@ -43,7 +43,7 @@ const Footer = () => {
       </div>
       <div className={`${FooterStyles.section} ${FooterStyles.section_B}`}>
         <div className={FooterStyles.container}>
-          <p>Copyright © {new Date().getFullYear()} Multico Constructive PvtLtd. All rights reserved.</p>
+          <p>Copyright © {new Date().getFullYear()} Multico Constructive Pvt Ltd. All rights reserved.</p>
         </div>
       </div>
     </>
