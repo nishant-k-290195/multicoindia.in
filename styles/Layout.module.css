@@ -1,0 +1,11 @@
+.layout{
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: start;
+  justify-content: center;
+  overflow-x: hidden;
+}

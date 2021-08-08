@@ -1,7 +1,9 @@
+import HomeStyles from '../styles/Home.module.css'
+
 const Section_A = () => {
   return (
-    <div>
-      <div>
+    <div className={`${HomeStyles.section} ${HomeStyles.section_A}`}>
+      <div className={HomeStyles.container}>
         <h1>
           The leading Adhesive Products & Solvent Cement Supplier.
           We cover both industrial and residential needs.
@@ -13,8 +15,8 @@ const Section_A = () => {
 
 const Section_B = () => {
   return (
-    <div>
-      <div>
+    <div className={`${HomeStyles.section} ${HomeStyles.section_B}`}>
+      <div className={HomeStyles.container}>
         <div>
           <h3>Service</h3>
           <p>We provide both B2B and B2C services.</p>
@@ -34,8 +36,8 @@ const Section_B = () => {
 
 const Section_C = () => {
   return (
-    <div>
-      <div>
+    <div className={`${HomeStyles.section} ${HomeStyles.section_C}`}>
+      <div className={HomeStyles.container}>
         <h2>Services</h2>
       </div>
     </div>
@@ -45,8 +47,8 @@ const Section_C = () => {
 
 const Section_D = () => {
   return (
-    <div>
-      <div>
+    <div className={`${HomeStyles.section} ${HomeStyles.section_D}`}>
+      <div className={HomeStyles.container}>
         <h2>Call of Action</h2>
         <button>Contact Us</button>
         <button>+91-9709815555</button>
@@ -57,8 +59,8 @@ const Section_D = () => {
 
 const Section_E = () => {
   return (
-    <div>
-      <div>
+    <div className={`${HomeStyles.section} ${HomeStyles.section_E}`}>
+      <div className={HomeStyles.container}>
         <h1>
           Service Locations
         </h1>
@@ -69,8 +71,8 @@ const Section_E = () => {
 
 const Section_F = () => {
   return (
-    <div>
-      <div>
+    <div className={`${HomeStyles.section} ${HomeStyles.section_F}`}>
+      <div className={HomeStyles.container}>
         <h1>
           Testimonial
         </h1>
