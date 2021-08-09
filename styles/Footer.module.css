@@ -59,7 +59,7 @@
   justify-content: space-between;
   grid-template-columns: max-content;
   grid-template-rows: (6, min-content);
-  row-gap: .5rem;
+  row-gap: .2rem;
 }
 
 .map{
