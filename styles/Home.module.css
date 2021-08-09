@@ -83,6 +83,7 @@
   display: grid;
   align-items: center;
   padding: 4rem 0;
+  color: #000000a9;
 }
 .section_B > .container {
   display: grid;
@@ -119,6 +120,7 @@
   align-items: center;
   background-color: rgba(145, 141, 143, 0.13);
   padding: 4rem 0;
+  color: #000000a9;
 }
 
 .section_C > .container {
@@ -153,9 +155,8 @@
 .section_D{
   display: grid;
   align-items: center;
-  /* background-color:rgb(206, 108, 72); */
   padding: 4rem 0;
-  /* color: white; */
+  color: #000000a9;
 }
 
 .section_D > .container {
@@ -216,20 +217,4 @@
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
   }
-}
-
-.section_F{
-  display: grid;
-  align-items: center;
-  padding: 4rem 0;
-}
-
-.section_F> .container {
-  display: grid;
-}
-@media screen and (min-width: 769px) {
-  .section_F > .container {
-
-  }
-  
 }

@@ -45,16 +45,15 @@
     grid-template-columns: repeat(5, max-content);
     align-items: center;
     justify-content: space-between;
+    column-gap: 2rem;
   }
   .routeInactive{
     color: rgba(0, 0, 0, 0.993);
     font-weight: 300;
-    padding: .5rem;
   }
   .routeActive{
     color: rgb(252, 81, 76);
     font-weight: 300;
-    padding: .5rem;
   }
 }
 
