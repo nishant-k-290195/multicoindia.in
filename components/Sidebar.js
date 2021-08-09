@@ -4,8 +4,10 @@ import Link from 'next/link'
 
 const Sidebar = (props) => {
   const {sidebarState, setSidebarState} = props
+  
   return (
-    <div className={`${SidebarStyles.section} ${sidebarState? SidebarStyles.open:SidebarStyles.close}`} >
+    <div 
+      className={`${SidebarStyles.section} ${sidebarState? SidebarStyles.open:SidebarStyles.close}`} >
       <BsBoxArrowInLeft onClick ={() => {setSidebarState(!sidebarState)}} className={SidebarStyles.menuIcon}/>
       <div className={SidebarStyles.container}>
         <Link href='/'><img src="logo.png" alt="logo" /></Link>

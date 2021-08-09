@@ -21,20 +21,6 @@
   transition: transform .3s;
 }
 
-/* .close{
-  height: 150%;
-  width: 0;
-  z-index: 2;
-  left: 0;
-  top: 0;
-  position: fixed;
-  background: linear-gradient(
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)
-  ), url('../public/hero2.jpg');
-  transition: width .2s;
-}
-*/
 .close > .container{
   display: none;
 } 
@@ -62,7 +48,7 @@
   color: white;
   position: absolute;
   right: 1rem;
-  top: 2rem;
+  top: 1.2rem;
   height: 1.5rem;
   width: 1.5rem;
 }
