@@ -2,13 +2,16 @@ import Nav from "../components/Nav"
 import Footer from '../components/Footer'
 import layoutStyles from '../styles/Layout.module.css'
 
-const Layout = ({children}) => {
+const Layout = (props) => {
+  const {sidebarState, setSidebarState} = props
   return (
-    <div className={layoutStyles.layout}>
-      <Nav />
-      {children}
-      <Footer />
-    </div>
+    <>
+      <Nav {...props}/>
+      <div className={layoutStyles.layout} onClick={() => {setSidebarState(false)}}>
+        {props.children}
+        <Footer />
+      </div>
+    </>
   )
 }
 

@@ -1,0 +1,68 @@
+.section{
+  height: 150%;
+  width: 70vw;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  position: fixed;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ), url('../public/hero2.jpg');
+}
+
+.open{
+  transform: translateX(0);
+  transition: transform .3s;
+}
+
+.close{
+  transform: translateX(-70vw);
+  transition: transform .3s;
+}
+
+/* .close{
+  height: 150%;
+  width: 0;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  position: fixed;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ), url('../public/hero2.jpg');
+  transition: width .2s;
+}
+*/
+.close > .container{
+  display: none;
+} 
+
+.section > .container{
+  width: 10rem;
+  height: 150%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, min-content);
+  row-gap: 4rem;
+  padding: 0 2rem;
+}
+
+.nav{
+  display: grid;
+  grid-template-columns: 1fr;
+  color: white;
+  display: grid;
+  grid-template-columns: max-content;
+  grid-template-rows: repeat(5, min-content);
+  row-gap: 1rem;
+}
+.menuIcon{
+  color: white;
+  position: absolute;
+  right: 1rem;
+  top: 2rem;
+  height: 1.5rem;
+  width: 1.5rem;
+}

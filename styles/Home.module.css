@@ -10,16 +10,41 @@
 }
 
 .section_A{
-  background-color: coral;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ), url('../public/hero.jpg') no-repeat;
+  background-size: contain;
   display: grid;
   align-items: center;
   padding: 4rem 0;
 }
 
+.section_A h1{
+  color: white;
+}
+
+@media screen and (min-width: 769px) {
+  .section_A{
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), url('../public/hero.jpg') no-repeat;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    height: 85vh;
+    padding: 4rem 0;
+  }
+  
+  .section_A > h1 {
+  font-size: 3.5rem;
+  line-height: 6rem;
+  }
+}
 .section_B{
   display: grid;
   align-items: center;
-  background-color: blue;
   padding: 4rem 0;
 }
 .section_B > .container {
