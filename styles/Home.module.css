@@ -196,7 +196,7 @@
 .section_E{
   display: grid;
   align-items: center;
-  background-color: rgb(209, 106, 69);
+  background-color: #1F1F1F;
   padding: 4rem 0;
 }
 
@@ -212,7 +212,6 @@
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
   }
-  
 }
 
 .section_F{

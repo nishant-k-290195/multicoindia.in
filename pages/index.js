@@ -1,11 +1,8 @@
 import HomeStyles from '../styles/Home.module.css'
 import { GiGrowth } from 'react-icons/gi';
-import { FaServicestack } from 'react-icons/fa';
-import { FaOpencart } from 'react-icons/fa';
+import { FaServicestack, FaOpencart } from 'react-icons/fa';
 import Link from 'next/link'
-
 import {HOME} from '../components/textData'
-import { coral } from 'color-name';
 
 const Section_A = () => {
   return (
@@ -70,7 +67,7 @@ const Section_D = () => {
   return (
     <div className={`${HomeStyles.section} ${HomeStyles.section_D}`}>
       <div className={HomeStyles.container}>
-        <img className={HomeStyles.section_d_img} src="section_d.jpg" alt="img" />
+        <img className={HomeStyles.section_d_img} src="section_d1.jpg" alt="img" />
         <div>
           <h2>Call us now for a sample product</h2>
           <Link href='tel:+91-9709815555'>+91-9709815555</Link>
@@ -97,6 +94,9 @@ const Section_F = () => {
     <div className={`${HomeStyles.section} ${HomeStyles.section_F}`}>
       <div className={HomeStyles.container}>
         <h2>What do our clients and customers say...</h2>
+        <div>
+          
+        </div>
       </div>
     </div>
   )
