@@ -3,6 +3,7 @@ import { GiGrowth } from 'react-icons/gi';
 import { FaServicestack, FaOpencart } from 'react-icons/fa';
 import Link from 'next/link'
 import {HOME} from '../components/textData'
+import Testimonial from '../components/Testimonial';
 
 const Section_A = () => {
   return (
@@ -90,16 +91,7 @@ const Section_E = () => {
 }
 
 const Section_F = () => {
-  return (
-    <div className={`${HomeStyles.section} ${HomeStyles.section_F}`}>
-      <div className={HomeStyles.container}>
-        <h2>What do our clients and customers say...</h2>
-        <div>
-          
-        </div>
-      </div>
-    </div>
-  )
+  return <Testimonial />
 }
 
 const Home = () => {
