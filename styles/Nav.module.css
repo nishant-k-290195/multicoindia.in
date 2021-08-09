@@ -1,10 +1,11 @@
 .section{
   width: 100%;
   height: 100%;
-  background: linear-gradient(
+  background-color: white;
+  /* background: linear-gradient(
     rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.5)
-  ), url('../public/hero2.jpg');
+  ), url('../public/hero2.jpg'); */
   top: 0;
   position: sticky;
   position: -webkit-sticky;
@@ -27,6 +28,7 @@
 
 .menuIcon{
   color: white;
+  color: coral;
   height: 1.5rem;
   width: 1.5rem;
 }
@@ -48,7 +50,17 @@
     grid-template-columns: repeat(5, max-content);
     align-items: center;
     justify-content: space-between;
-    column-gap: 1rem;
-    color: white;
+    /* column-gap: 1rem; */
+  }
+  .nav > a{
+    color: rgba(0, 0, 0, 0.623);
+    padding: .5rem;
+  }
+  .nav > a:hover{
+    color: coral;
+    background-color: rgba(128, 128, 128, 0.137);
+    padding: .5rem;
+    transition: .3s;
+    border-radius: 2px;
   }
 }

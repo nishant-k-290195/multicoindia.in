@@ -13,7 +13,7 @@ const Nav = (props) => {
         <div className={NavStyles.nav}>
           <Link href='/'>Home</Link>
           <Link href='/about'>About</Link>
-          <Link href='/products'>Products & Services</Link>
+          <Link href='/products'>Products</Link>
           <Link href='/career'>Career</Link>
           <Link href='/contact'>Contact</Link>
         </div>
