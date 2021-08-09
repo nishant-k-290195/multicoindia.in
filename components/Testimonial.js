@@ -2,7 +2,6 @@ import {TESTIMONIAL} from '../components/textData'
 import testimonialStyles from '../styles/Testimonial.module.css'
 
 const Testimonial = () => {
-  console.log(TESTIMONIAL)
   return (
     <>
       <div className={testimonialStyles.section}>
