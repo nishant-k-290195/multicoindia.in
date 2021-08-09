@@ -6,7 +6,7 @@ const Nav = (props) => {
   const {sidebarState, setSidebarState} = props
   
   return (
-    <div className={NavStyles.section}>
+    <div className={NavStyles.section} >
       <div className={NavStyles.container}>
         <GiHamburgerMenu onClick ={() => {setSidebarState(!sidebarState)}} className={NavStyles.menuIcon}/>
         <Link href='/'><img src="logo.png" alt="logo" /></Link>
