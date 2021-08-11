@@ -18,7 +18,7 @@
 
 @media screen and (min-width: 769px) {
   .container {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: min-content 1fr min-content;
     justify-content: space-between;
     column-gap: 2rem;
     row-gap: 0;
@@ -37,4 +37,16 @@
   align-items: center;
   justify-content: center;
   justify-self: center;
+}
+
+.arrow_icons{
+  height: 4rem;
+  width: 4rem;
+  color: coral;
+  align-self: center;
+}
+
+.mainSlide{
+  display: grid;
+  transition: display 3s;
 }
