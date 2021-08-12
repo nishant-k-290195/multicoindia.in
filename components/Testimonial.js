@@ -31,7 +31,7 @@ const Testimonial = () => {
             spaceBetween={30} 
             loop={true} 
             pagination={{"clickable": true}}
-            autoplay={{ delay: 3000 }}
+            autoplay={{ delay: 2000 }}
             >
             {
               TESTIMONIAL.map((item, index) =>{
