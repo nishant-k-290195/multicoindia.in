@@ -110,7 +110,7 @@ const Home = () => {
       <Section_E />
       <Section_F />
       <Section_G />
-      <Vendors2 />
+      {/* <Vendors2 /> */}
     </div>
   )
 }
