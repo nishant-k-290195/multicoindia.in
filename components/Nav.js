@@ -3,10 +3,8 @@ import NavStyles from '../styles/Nav.module.css'
 import {GiHamburgerMenu} from 'react-icons/gi'
 import { useRouter } from 'next/router';
 
-const Nav = (props) => {
-  const {sidebarState, setSidebarState} = props
+const Nav = ({sidebarState, setSidebarState}) => {
   const router = useRouter()
-  console.log(router.pathname)
   return (
     <div className={NavStyles.section} >
       <div className={NavStyles.container}>

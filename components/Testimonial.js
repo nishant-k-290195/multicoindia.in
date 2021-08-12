@@ -1,61 +1,55 @@
-import {TESTIMONIAL} from '../components/textData'
+import { TESTIMONIAL } from '../components/textData'
 import testimonialStyles from '../styles/Testimonial.module.css'
-import { useState } from 'react'
-import {IoIosArrowDropleftCircle, IoIosArrowDroprightCircle} from 'react-icons/io'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, { Navigation, Pagination, Autoplay } from 'swiper/core';
+import 'swiper/swiper-bundle.css';
+import "swiper/components/navigation/navigation.min.css"
+import "swiper/components/pagination/pagination.min.css"
+import {useState, useEffect} from 'react'
+
+
+SwiperCore.use([Pagination, Navigation, Autoplay]);
+
 const Testimonial = () => {
-  const [activeSlide, setActiveSlide] = useState(0)
-  const [testimonialLength, setTestionialLenngth] = useState(TESTIMONIAL.length)
-
-
-  setTimeout(() => {
-    setActiveSlide(() => {
-      if(activeSlide === TESTIMONIAL.length -1){
-        return 0
-      }else{
-        return activeSlide + 1
-      }
-    })
-  }, 2000)
+  const [responsive, setResponsive] = useState('mobile')
+  useEffect(() => {
+    if(screen.width > 768) {
+      setResponsive(() => `desktop`)
+    }else
+      return `mobile`
+  })
+  
   return (
     <>
+    
       <div className={testimonialStyles.section}>
-      <h2 style={{textAlign:'center', marginBottom:'2rem'}}>What do our clients and customers say...</h2>
-      <div className={testimonialStyles.container}>
-        <IoIosArrowDropleftCircle className={testimonialStyles.arrow_icons} onClick={ () => { setActiveSlide(() => {
-          if(activeSlide === 0){
-            return TESTIMONIAL.length -1
-          }else{
-            return activeSlide - 1
-          }
-        }) } }/>
-
-        <div className={testimonialStyles.mainSlide}>
-        {      
-          TESTIMONIAL.map((item, index) => {
-            if(activeSlide === index){
-              return (
-                <>
-                  <div className={testimonialStyles.card}>
-                    <h4 style={{textAlign:'center'}}>{item.name}</h4>
-                    <p style={{textAlign:'center'}}>{item.comment}</p>
-                  </div>
+        <h2 style={{textAlign:'center', marginBottom:'2rem'}}>What do our clients and customers say...</h2>
+        <div className={testimonialStyles.container}>
+          <Swiper
+            navigation={ responsive === `mobile`? false: true }
+            slidesPerView={1}
+            spaceBetween={30} 
+            loop={true} 
+            pagination={{"clickable": true}}
+            autoplay={{ delay: 3000 }}
+            >
+            {
+              TESTIMONIAL.map((item, index) =>{
+                return <>
+                    <SwiperSlide key={index}>
+                      <div className={testimonialStyles.slide_wrapper}>
+                        <div>
+                          <h3>{item.name}</h3>
+                          <h4>{item.comment}</h4>
+                        </div>
+                      </div>
+                    </SwiperSlide>
                 </>
-              )
+              })
             }
-          })
-        }
+          </Swiper>
         </div>
-
-        <IoIosArrowDroprightCircle className={testimonialStyles.arrow_icons} onClick={() => { setActiveSlide(() => {
-          if(activeSlide === TESTIMONIAL.length -1){
-            return 0
-          }else{
-            return activeSlide + 1
-          }
-        }) } } />
       </div>
-      </div>
-
     </>
   )
 }

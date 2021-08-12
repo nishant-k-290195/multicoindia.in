@@ -30,11 +30,6 @@ const Footer = () => {
 
           <div className={FooterStyles.contact}>
             <h3>Multico Constructive Pvt. Ltd.</h3>
-            {/* <Link href='tel:+91-9709815555'>+91-9709815555 </Link>
-            <Link href='mailto: info@multicoindia.in'>info@multicoindia.in</Link>
-            <Link>Vivek Vihar, Lane No-06, Mithanpura,</Link>
-            <Link>Muzaffarpur, Bihar – 842002</Link> */}
-
             <address>
               <Link href='tel:+91-9709815555'>+91-9709815555 </Link><br />
               <Link href='mailto: info@multicoindia.in'>info@multicoindia.in</Link><br /><br />
@@ -45,7 +40,6 @@ const Footer = () => {
             <iframe 
               className={FooterStyles.map}
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7620659.11475179!2d78.79689766092358!3d21.151405014377122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed11c86a4bddcf%3A0x19ede4256fe211b8!2sMULTICO%20CONSTRUCTIVE%20PVT.%20LTD.!5e0!3m2!1sen!2sin!4v1628400205751!5m2!1sen!2sin"
-              allowfullscreen="" 
               loading="lazy">
             </iframe>
           </div>

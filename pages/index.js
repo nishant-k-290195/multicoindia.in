@@ -4,6 +4,8 @@ import { FaServicestack, FaOpencart } from 'react-icons/fa';
 import Link from 'next/link'
 import {HOME} from '../components/textData'
 import Testimonial from '../components/Testimonial';
+import Vendors from '../components/Vendors'
+import Vendors2 from '../components/Vendors2'
 
 const Section_A = () => {
   return (
@@ -52,12 +54,12 @@ const Section_C = () => {
           <div className={HomeStyles.services}>
             {
               HOME.Section_C.services.map(item => {
-                return <p>{item}</p>
+                return <p key ={item.id}>{item.service}</p>
               })
             }
           </div>
         </div>
-        <img className={HomeStyles.section_c_img}src="section_c.jpg" alt="img" />
+        <img className={HomeStyles.section_c_img} src="section_c.jpg" alt="img" />
       </div>
     </div>
   )
@@ -83,7 +85,7 @@ const Section_E = () => {
   return (
     <div className={`${HomeStyles.section} ${HomeStyles.section_E}`}>
       <div className={HomeStyles.container}>
-        <h2> Areas we serve</h2>
+        <h2>Areas we serve</h2>
         <p>As of now, we can supply our products all across India and we're working our best to expand ourselves to the global market.</p>
       </div>
     </div>
@@ -92,6 +94,10 @@ const Section_E = () => {
 
 const Section_F = () => {
   return <Testimonial />
+}
+
+const Section_G = () => {
+  return <Vendors />
 }
 
 const Home = () => {
@@ -103,6 +109,8 @@ const Home = () => {
       <Section_D />
       <Section_E />
       <Section_F />
+      <Section_G />
+      <Vendors2 />
     </div>
   )
 }
