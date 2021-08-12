@@ -40,7 +40,7 @@ const Testimonial = () => {
                       <div className={testimonialStyles.slide_wrapper}>
                         <div>
                           <h3>{item.name}</h3>
-                          <h4>{item.comment}</h4>
+                          <p>{item.comment}</p>
                         </div>
                       </div>
                     </SwiperSlide>
