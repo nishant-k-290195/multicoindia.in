@@ -130,7 +130,7 @@
 }
 .section_c_img{
   height: 14rem;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
 }
 
 @media screen and (min-width: 769px) {
@@ -180,7 +180,7 @@
 
 .section_d_img{
   height: 14rem;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
 }
 
 @media screen and (min-width: 769px) {
