@@ -1,8 +1,8 @@
 {
-  "name": "Next.JS Progressive Web App",
-  "short_name": "Next PWA",
-  "theme_color": "#ffffff",
-  "background_color": "#004740",
+  "name": "Multico Constructive Pvt Ltd",
+  "short_name": "Multico",
+  "theme_color": "rgb(245, 118, 72)",
+  "background_color": "rgb(245, 118, 72)",
   "display": "fullscreen",
   "orientation": "portrait",
   "scope": "/",
