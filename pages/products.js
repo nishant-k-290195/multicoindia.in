@@ -6,7 +6,6 @@ const Section_A = () => {
   return(
     <div className={styles.section}>
       <div className={styles.container}>
-        <div className={styles.wrapper}>
           {
             PRODUCTS.products.map((item) => {
               return <div className={styles.card} key={item.id}>
@@ -16,7 +15,6 @@ const Section_A = () => {
               </div>
             })
           }
-        </div>
       </div>
     </div>
   )
