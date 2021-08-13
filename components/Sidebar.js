@@ -14,7 +14,7 @@ const Sidebar = (props) => {
         <div className={SidebarStyles.nav}>
           <div onClick ={() => {setSidebarState(false)}}><Link href='/'>Home</Link></div>
           <div onClick ={() => {setSidebarState(false)}}><Link href='/about'>About</Link></div>
-          <div onClick ={() => {setSidebarState(false)}}><Link href='/products'>Products & Services</Link></div>
+          <div onClick ={() => {setSidebarState(false)}}><Link href='/products'>Products</Link></div>
           <div onClick ={() => {setSidebarState(false)}}><Link href='/career'>Career</Link></div>
           <div onClick ={() => {setSidebarState(false)}}><Link href='/contact'>Contact</Link></div>
         </div>

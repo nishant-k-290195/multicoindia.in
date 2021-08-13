@@ -1,4 +1,4 @@
-import { VENDORS } from './textData'
+import { VENDORS } from '../data'
 import styled, {keyframes} from 'styled-components'
 
 const Section = styled.div`
@@ -13,28 +13,28 @@ const Section = styled.div`
 const Container = styled.div`
   max-width: 1100px;
   margin: 0 auto;
-  height: auto;
-  position: relative;
 `
 const revolve = keyframes`
-  0% { transform: translateX(0); }
-  100% { transform: translateX(300%); }
+    from {
+      transform: translateX(0%);
+    }
+
+    to {
+      transform: translateX(100%);
+    }
 `
 
 const StyledWrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(4, max-content);
+  grid-template-columns: repeat(4, min-content);
   align-items: center;
   justify-content: space-between;
-  animation: ${revolve} 3s linear infinite;
-  position:absolute;
+  animation: ${revolve} 3s linear 1s infinite running;
 `
 const StyledImg = styled.img`
   height: 3rem;
   width: 6rem;
-
 `
-
 
 const Vendors2 = () => {
   return (

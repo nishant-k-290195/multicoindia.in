@@ -2,7 +2,7 @@ import HomeStyles from '../styles/Home.module.css'
 import { GiGrowth } from 'react-icons/gi';
 import { FaServicestack, FaOpencart } from 'react-icons/fa';
 import Link from 'next/link'
-import {HOME} from '../components/textData'
+import { HOME } from '../data'
 import Testimonial from '../components/Testimonial';
 import Vendors from '../components/Vendors'
 import Vendors2 from '../components/Vendors2'

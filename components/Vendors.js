@@ -1,4 +1,4 @@
-import { VENDORS } from './textData'
+import { VENDORS } from '../data'
 import Slider from "react-slick";
 import VendorsStyles from '../styles/Vendors.module.css'
 import 'slick-carousel/slick/slick-theme.css';
